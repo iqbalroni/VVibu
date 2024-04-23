@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VVibu/static/css/main.2467f8ce.css",
+    "main.js": "/VVibu/static/js/main.b93e932f.js",
+    "index.html": "/VVibu/index.html",
+    "main.2467f8ce.css.map": "/VVibu/static/css/main.2467f8ce.css.map",
+    "main.b93e932f.js.map": "/VVibu/static/js/main.b93e932f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2467f8ce.css",
+    "static/js/main.b93e932f.js"
+  ]
+}
