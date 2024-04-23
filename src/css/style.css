@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0A192F;
+    /* color: white; */
+    /* background-image: linear-gradient(#141935); */
+}
+
+.gambar-kartun{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.keterangan-kartun h3{
+    margin: 0;
+    margin-bottom: 10px;
+    /* margin-top: 3px; */
+    font-weight: 600;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.load{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    height: 250px;
+    background-color: transparent;
+    border: 0;
+    color: #C0CAE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover{
+    /* transform: scale(1.1); */
+    border-radius: 0;
+    background-color: #0A192F;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:hover .gambar-kartun{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.card:hover .body-kartun{
+    padding: 0 10px;
+}
+
+.terbaru{
+    background-color: #172A46;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.terbaru .p-terbaru{
+    color: #C0CAE9;
+    padding-top: 10px;
+    font-size: 15px;
+    margin: 0;
+}
+.terbaru .title-terbaru{
+    color: #63FDD9;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.terbaru .title-copyright{
+    color: #63FDD9;
+    padding-top: 20px;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 0;
+}
+.terbaru .p-desk{
+    color: #C0CAE9;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    margin: 0;
+}
+
+.card .footer-card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card .times{
+    font-size: 10px;
+    padding: 0;
+    color: #63FDD9;
+}
+
+.card .body-kartun{
+    padding: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.title-komik{
+    display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 2.4em;
+  line-height: 1.3em;
+}
+
+.search-terbaru{
+    background-color: #294c81;
+    width: 100%;
+    border: 0;
+    padding: 10px 15px;
+    color: #63FDD9;
+    outline: none;
+    font-weight: 600;
+}
+
+.result-search{
+    color: #C0CAE9;
+}
+
+.search-terbaru::placeholder {
+    color: #C0CAE9;
+    opacity: 1; /* Firefox */
+  }
+
+.loader {
+    border: 8px solid #172A46;
+    border-radius: 50%;
+    border-top: 8px solid #63FDD9;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
